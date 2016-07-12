@@ -15,13 +15,16 @@ just wasnt good enough for me :)
 
 ## Howto use
 
-install/setup flexget
-install youtube-dl
-pull/download this python script
+  * install/setup flexget
 
-add following lines under Template:
+  * install youtube-dl
+
+  * pull/download this python script
+
+
+  * add following lines under Template:
   
-`
+```
   youtube-filtered:
     exec:
       on_output:
@@ -30,16 +33,18 @@ add following lines under Template:
   youtube:
     accept_all: yes
     template: youtube-filtered
-`
+```
 dont forget to replace the PATH TO SCPIPT code.
 
-add for each stream you want to watch something like that:
-`
+
+  * add for each stream you want to watch something like that:
+```
   yt_Sacha-Chua:
     rss: https://www.youtube.com/feeds/videos.xml?channel_id=UClT2UAbC6j7TqOWurVhkuHQ
     template: youtube
-`
-Done!
+```
+
+  * Done!
 
 
 ## Contributing
